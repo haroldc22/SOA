@@ -13,6 +13,7 @@ img{
 }
 nav{
     width: 100%;
+    font-size: 16px;
 }
 .panel{
     height: 100vh;
@@ -22,12 +23,14 @@ nav{
     font-size: 40px;
 }
 .container{
+    width: 80%;
     height: 40vh;
     align-content: space-between;
 }
-.container > div{
-    margin: 0 10%;
+.container > div{ 
+    margin: 0 0 0 10%;
     cursor: pointer;
+    width: auto;
 }
 .qr{
     position: absolute;
@@ -35,4 +38,25 @@ nav{
     left: 1%;
     font-size: 70px;
     cursor: pointer;
+}
+.navbar-brand{
+    font-size: 48px;
+    position: relative;
+    left: 20%;
+    font-family: 'Oswald', sans-serif;
+}
+.navbar-brand:hover{
+    color: #0400ff !important;
+}
+@media screen and (max-width: 600px){
+    body{
+        background-color: #FFF;
+    }
+    .panel{
+        padding: 8% 8% !important;
+        border-radius: 3%;
+    }
+    .container div{
+        margin-top: 8%;
+    }
 }
